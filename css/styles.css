@@ -7,7 +7,7 @@
   --nav-item-color: #212121;
   --futer-address-color: rgba(255, 255, 255, 0.6);
   --team-section-color: #f5f4fa;
-  --hero-button-focus-color: #188CE8;
+  --hero-button-focus-color: #188ce8;
 }
 
 body {
@@ -25,10 +25,46 @@ body {
 }
 
 .hidden-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+ul,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding-inline-start: 0px;
 }
 
 /* ------------------------ header ----------------------*/
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: 'Raleway';
@@ -37,6 +73,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--black-color);
+  margin-right: 93px;
 }
 
 .logo-web {
@@ -48,10 +85,18 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  display: flex;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-navigation-item {
   color: var(--nav-item-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .header-navigation-item:hover,
@@ -59,11 +104,20 @@ body {
   color: var(--accent-color);
 }
 
+.header-connect {
+  margin-left: auto;
+}
+
 .header-contacts-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  display: flex;
+}
+
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-contacts {
@@ -80,9 +134,14 @@ body {
 
 .hero {
   background-color: var(--hero-color);
+  height: 600px;
+  text-align: center;
 }
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -110,6 +169,10 @@ body {
 
 /* ---------------------characteristic-------------------- */
 
+.characteristic-list {
+  display: flex;
+}
+
 .characteristic-title {
   font-weight: 700;
   font-size: 14px;
@@ -127,6 +190,18 @@ body {
 }
 
 /* -------------------------activity---------------------- */
+
+.activity-list {
+  display: flex;
+}
+
+.activity-item + .activity-item {
+  margin-left: 30px;
+}
+
+.activity-title {
+  margin-bottom: 50px;
+}
 
 .activity-title,
 .team-title {
