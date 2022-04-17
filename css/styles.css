@@ -55,8 +55,12 @@ h3 {
 }
 
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.photo {
+  display: block;
 }
 
 /* ------------------------ header ----------------------*/
@@ -108,11 +112,8 @@ h3 {
   color: var(--accent-color);
 }
 
-.header-connect {
-  margin-left: auto;
-}
-
 .header-contacts-list {
+  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -139,11 +140,11 @@ h3 {
 .hero {
   background-color: var(--hero-color);
   text-align: center;
-  min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
-  padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
   width: 696px;
@@ -179,6 +180,10 @@ h3 {
 
 .characteristic-list {
   display: flex;
+}
+
+.characteristic-item {
+  width: 270px;
 }
 
 .characteristic-item + .characteristic-item {
@@ -261,8 +266,12 @@ h3 {
 .team-list-item + .team-list-item {
   margin-left: 30px;
 }
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-name {
-  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -273,7 +282,6 @@ h3 {
 
 .team-profession {
   margin-top: 10px;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
@@ -285,16 +293,12 @@ h3 {
 
 .footer {
   background-color: var(--hero-color);
-  min-height: 252px;
-}
-
-.footer > .container {
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
   font-family: 'Raleway';
   font-weight: 700;
@@ -374,11 +378,8 @@ h3 {
 
 /* ------------------Portfolio list--------------------- */
 
-.project-container {
-  margin-top: 50px;
-}
-
 .project-list {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
