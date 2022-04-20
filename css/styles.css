@@ -177,6 +177,9 @@ h3 {
 }
 
 /* ---------------------characteristic-------------------- */
+.characteristic-section {
+  padding-bottom: 0;
+}
 
 .characteristic-list {
   display: flex;
@@ -382,12 +385,20 @@ h3 {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.project-info {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .project-item {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  margin-right: 30px;
+}
+
+.project-item:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
 .project-item:nth-child(1n + 4) {
@@ -395,8 +406,6 @@ h3 {
 }
 
 .project-name {
-  margin-top: 20px;
-  margin-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -406,8 +415,6 @@ h3 {
 
 .project-type {
   margin-top: 4px;
-  margin-bottom: 20px;
-  margin-left: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
